@@ -1,0 +1,411 @@
+@font-face {
+    font-family: "Bai Jamjuree";
+    src: url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+  }
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Bai Jamjuree","cursive",sans-serif;
+}
+section,footer{
+    max-width: 80%;
+    margin:60px auto;
+
+}
+header{
+    background:url("../images/bg-header-desktop.png");
+    background-size: cover;
+    text-align: center;
+    background-repeat: none;
+    padding-top: 112px;
+}
+h1,h2,h3,h4{
+    color: #4C545C ;
+    font-weight: "semiBold";
+}
+p{
+    color: #9EABB2;
+    line-height: 30px;
+}
+footer{
+    padding-top: 39px;
+    padding-bottom: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 0;
+    .footer-logo{
+        width: 55px;
+        height: 55px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .footer-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 825px;
+      
+    }
+}
+.logo{
+   
+    margin-bottom: 56px;
+}
+#footer-links{
+    
+    list-style: none;
+    display: flex;
+    height: 72px;
+    
+   
+    flex-wrap: wrap;
+    align-content: space-around;
+    li{
+       
+        width: calc(100% / 3);
+        a{
+            color: #4C545C;
+            text-decoration: none;
+            &:hover{
+                color: #26bba4;
+            }
+        }
+    }
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 40px;
+    p{
+      
+        margin: 20px auto;
+        
+        width: 730px;
+    }
+
+}
+.logo{
+    text-align: center;
+}
+.platform-download-group{
+    text-align: center;
+    button{
+        width: 227px;
+        height: 56px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 28px;
+       border: 1px outset
+    }
+    .ios-downloadButton{
+        background-color: #26bba4;
+        margin-right: 42px;  border-color: #26bba596;
+        &:hover{
+            background-color: rgba(38, 187, 164,.75) ;
+        }
+    }
+    .mac-downloadButton{
+        background-color: #6174FF;
+        margin-left: 42px;
+        border-color: #6173ff9c;
+        &:hover{
+            background-color: rgba(97, 115, 255,0.75);
+        }
+    }
+
+}
+
+.feature-image-descriptions{
+    display: flex;
+    align-items: center;
+   
+    .feature-image{
+        display: inline-block;
+     
+       .img-img{
+           position: relative;
+           left: -300px;
+           
+           img{
+               height: auto;
+               width: 100%;
+           }
+       }
+     
+    }
+    .feature-descriptions{
+        display: inline-block;
+        position: relative;
+        left: -150px;
+        .feature-description{
+            margin-top: 56px;
+        }
+         
+    }
+ 
+}
+.platforms{
+    .platform-image{
+        text-align: center;
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.feature-ico-descriptions{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .feature-ico-description{
+       img{
+           margin-bottom: 40px;
+       }
+        width: 350px;
+        .ico-description{
+            h4{
+                margin-bottom: 16px ;
+                font-size: 24px;
+            }
+        }
+    }
+}
+.partners{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+    margin-bottom: 170px;
+
+}
+.social-links{
+    display: flex;
+    gap: 24px;
+    
+    .social-link{
+        fill:#4C545C; 
+        fill-rule:nonzero;
+    }
+
+    a{
+        &:hover{
+           .social-link{
+               stroke: #26bba4;
+               fill: #26bba4 ;
+           }
+        }
+    }
+}
+@media only Screen and (max-width:480px){
+   
+ 
+    section{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    header{
+        background:url("../images/bg-header-mobile.png");
+        background-size: cover;
+        background-position-x: center;
+        text-align: center;
+        background-repeat: none;
+        padding-top: 112px;  
+    }
+    h1,h2,h3,h4{
+        color: #4C545C ;
+        font-weight: "semiBold";  width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    p{
+        color: #9EABB2;
+        line-height: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        background-color: rgb(245, 245, 245);
+        width:100%;
+        margin-bottom: 0;
+        .footer-logo{
+            width: 55px;
+            height: 55px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .footer-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 56px;
+            justify-content: space-between;
+            width: 100%;
+          
+        }
+    }
+    .logo{
+       
+        margin-bottom: 56px;
+    }
+    #footer-links{
+        
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        height: inherit;
+        text-align: center;
+        justify-content: space-around;
+        li{
+           
+            width: 100%;
+           
+            a{ display: block;
+                color: #4C545C;
+                text-decoration: none;
+                &:hover{
+                    color: #26bba4;
+                }
+            }
+        }
+    }
+    .section-header{
+        text-align: center;
+        margin-bottom: 40px;
+        p{
+          
+            margin: 20px auto;
+        
+            width:100%;
+        }
+    
+    }
+    .logo{
+        text-align: center;
+    }
+    .platform-download-group{
+        text-align: center;
+        button{
+            width: 90%;
+            height: 56px;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 28px;
+            border: 1px outset
+        }
+        .ios-downloadButton{
+            background-color: #26bba4;
+            margin: 42px auto;  
+            border-color: #26bba596;
+            
+            
+            &:hover{
+                background-color: rgba(38, 187, 164,.75) ;
+            }
+        }
+        .mac-downloadButton{
+            background-color: #6174FF;
+           // margin-left: 42px;
+           margin: 42px auto;
+            border-color: #6173ff9c;
+            &:hover{
+                background-color: rgba(97, 115, 255,0.75);
+            }
+        }
+    
+    }
+    
+    .feature-image-descriptions{
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       
+        .feature-image{
+         
+           .img-img{
+              
+              width: 80%;
+               left: 0px;
+               margin-right: auto;
+               margin-left: auto; 
+           }
+         
+        }
+        .feature-descriptions{
+            text-align: center;
+            left: 0px;
+          
+             
+        }
+     
+    }
+    .platforms{
+        
+        .platform-image{
+            text-align: center;
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    
+    .feature-ico-descriptions{
+  
+        flex-direction: column;
+        text-align: center;
+        gap:40px;
+        .feature-ico-description{
+          
+            width: 100%;
+            .ico-description{
+                h4{
+                    margin-bottom: 16px ;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .partners{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 170px;
+        margin-bottom: 170px;
+        gap: 70px;
+        
+        
+    
+    }
+    .social-links{
+        display: flex;
+        gap: 24px;
+        
+        .social-link{
+            fill:#4C545C; 
+            fill-rule:nonzero;
+        }
+    
+        a{
+            &:hover{
+               .social-link{
+                   stroke: #26bba4;
+                   fill: #26bba4 ;
+               }
+            }
+        }
+    }
+}
